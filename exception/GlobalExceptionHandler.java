@@ -23,7 +23,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
 	
 	@ExceptionHandler(value = EntityNotFoundException.class)
 	public ResponseEntity<String> datafound(){
-		String msg="no data fount with this id ";
+		String msg="no data fount with this id  ";
 		return new ResponseEntity<String>(msg, HttpStatus.NOT_FOUND);
 		
 		
